@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+
+
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+  </script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="http://momentjs.com/downloads/moment.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.js"></script>
+  <script src="proj.js"></script>
+  <link rel="stylesheet" type="text/css" href="looks.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+</head>
+<body ng-app="ngAnimate">
+
+
+<div class="container_form" style="padding-top:10px;padding-left:10px">
+  <form class="">
+    <div class="row" style="margin:0px;">
+  <div class="FB_style col-sm-1">FB Search</div>
+  <div class="col-sm-3"></div>
+  <div class="input-group  col-sm-8" >
+    <div class="text_style" style="padding-left:0px;">
+      <div class="">
+      <div class="col-sm-3 " style="padding-right:0px;">
+    <input type="text" class="form-control" id="inp" placeholder="type something...">
+      </div>
+
+      <div class="input-group-btn col-sm-3" style="padding:0px;">
+        <button class="btn btn-primary" id="search_button" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+        <button class="btn btn-default FB_style" id="clear_button" type="submit" style="border-style:solid;border-color:rgb(46, 109, 164);margin-left:20px;">Clear</button>
+      </div>
+    </div>
+    </div>
+  </div>
+
+</div>
+</form>
+</div>
+
+<nav class="navigation">
+  <div class="navigation">
+    <ul class="nav nav-pills nav-justified">
+      <li class="active" id="users" value="users"><a class="navi_text"  data-toggle="pill" href="#">Users</a></li>
+      <li class="" id="pages" value="pages"><a class="navi_text" data-toggle="pill"  href="#">Pages</a></li>
+      <li id="events" value="events"><a class=" navi_text" data-toggle="pill"  href="#">Events</a></li>
+      <li id="places" value="places"><a class="navi_text" data-toggle="pill"  href="#">Places</a></li>
+      <li id="groups" value="groups"><a class="navi_text" data-toggle="pill"  href="#">Groups</a></li>
+      <li id="favorites"><a class="navi_text" data-toggle="pill" value="favorites" href="#">Favorites</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+
+<div id="pill-content" >
+
+
+</div>
+
+<div id="panel-content" ng-hide="myCheck">
+
+</div>
+
+</body>
+</html>
